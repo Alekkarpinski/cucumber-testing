@@ -10,7 +10,7 @@ public class LoginPageActions {
     private LoginPageLocators locators;
 
     public LoginPageActions() {
-        this.locators = new LoginPageLocators();
+        locators = new LoginPageLocators();
         PageFactory.initElements(SeleniumDriver.getDriver(), locators);
     }
 

@@ -1,5 +1,6 @@
 package pages.actions;
 
+import org.junit.Assert;
 import org.openqa.selenium.support.PageFactory;
 import pages.locators.HomePageLocators;
 import utils.SeleniumDriver;
@@ -25,5 +26,21 @@ public class HomePageActions {
 
     public boolean isLogoutButton() {
         return SeleniumHelper.isElementPresent(locators.logoutButton);
+    }
+
+    public void logoutFromSystem() {
+        locators.logoutButton.click();
+    }
+
+    public boolean isLoginButton() {
+        return SeleniumHelper.isElementPresent(locators.loginLink);
+    }
+
+    public void goToAddItemPage() {
+        locators.addItemLink.click();
+    }
+
+    public void goToItemsPage(){
+        locators.itemsLink.click();
     }
 }

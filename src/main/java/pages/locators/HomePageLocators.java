@@ -16,6 +16,10 @@ public class HomePageLocators {
     @FindBy(how = How.LINK_TEXT, using = "Items")
     public WebElement itemsLink;
 
+    @FindBy(how = How.XPATH, using = "html/body/nav/ul/li[5]/a")
+    public WebElement addItemLink;
+
+
     @FindBy(how = How.XPATH, using = "//a[@href='/login']")
     public WebElement loginLink;
 
@@ -24,4 +28,6 @@ public class HomePageLocators {
 
     @FindBy(how = How.XPATH, using = "//input[@value='Log Out']")
     public WebElement logoutButton;
+
+
 }
